@@ -15,7 +15,7 @@ import Message from "./models/Message.js";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
 
-app.use(cors({ origin: process.env.CLIENT_ORIGIN || "http://localhost:5173" }));
+app.use(cors({ origin: process.env.CLIENT_ORIGIN || "https://protfolio-maruf-3.onrender.com"}));
 app.use(express.json());
 
 // Static: certificate images, profile photo, downloadable CV
